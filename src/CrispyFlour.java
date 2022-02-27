@@ -1,5 +1,3 @@
-import java.time.LocalDate;
-
 public class CrispyFlour extends Material{
     private int quantity;
 
@@ -10,7 +8,7 @@ public class CrispyFlour extends Material{
     }
 
 
-    public CrispyFlour() {
+    public CrispyFlour(String id, String name, String localDate, String hsd, int gia, String quality) {
     }
 
     public CrispyFlour(int quantity) {

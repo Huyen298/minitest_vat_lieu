@@ -1,4 +1,6 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -32,9 +34,10 @@ public class Main {
             System.out.println("Menu");
             System.out.println("1. Danh sách bột");
             System.out.println("2. Danh sách thịt");
-            System.out.println("3. Thêm vật liệu mới");
-            System.out.println("4. Sửa");
-            System.out.println("5. Xóa");
+            System.out.println("3. Thêm bột mới");
+            System.out.println("4. Thêm thịt mới");
+            System.out.println("5. Sửa");
+            System.out.println("6. Xóa");
             System.out.println("0. Exit");
             System.out.println("Nhập lựa chọn: ");
             choice = input.nextInt();
@@ -46,7 +49,17 @@ public class Main {
                 case 2:
                     System.out.println("Danh sách thịt: ");
                     Manager.showArrMeat(thit);
-
+                    break;
+                case 3:
+                    System.out.println("Thêm bột mới:");
+                    bot.add(Manager.creatNewFlour());
+                    Manager.showArrFlour(bot);
+                    break;
+                case 4:
+                    System.out.println("Thêm thịt mới:");
+                    thit.add(Manager.creatNewMeat());
+                    Manager.showArrMeat(thit);
+                    break;
             }
         }
     }

@@ -1,5 +1,6 @@
 public interface Discount {
-    static void getRealMoney() {
+     static void getRealMoney() {
 
     }
 }
+
